@@ -1,14 +1,28 @@
 <html>
   <head>
-  <script>
-  $(function(){
-    $('#inner-content-div').slimScroll({
-        height: '250px'
-    });
-});
-  </script>
+  <script src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	
+	google.load("jquery", "1");
+
+	function sticky_relocate() {
+		var window_top = $(window).scrollTop();
+		var div_top = $('#sticky-anchor').offset().top;
+		if (window_top > div_top)
+		  $('#sticky').addClass('stick')
+		else
+		  $('#sticky').removeClass('stick');
+		}
+
+		google.setOnLoadCallback(function() {
+			$(window).scroll(sticky_relocate);
+			sticky_relocate();
+			});
+		</script>
 
   </head>
+  
+  
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/home.css" type="text/css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8" />
@@ -17,8 +31,35 @@
     <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
   
   	<body data-spy="scroll" >
+		</br>
+		</br>
+		
 	<div class="container">
-		<div class="navbar navbar-fixed-top">
+    <div class="row" id="temple">
+      <div class="span3" style="">
+          <img class="well" src="/images/front-ayyappa-logo.jpg" alt="" />
+      </div>
+      <div class="span9">
+        <div id="myCarousel" class="well carousel slide" style="height:341px;">
+              <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item"><img src="/images/img1.jpg" style="height:341px;"/></div>
+            <div class="item"><img src="/images/img2.jpg" style="height:341px;"/></div>
+            <div class="item"><img src="/images/img4.jpg" style="height:341px;"/></div>
+            <div class="item"><img src="/images/2012-07-15 03.59.28.jpg" style="height:341px;"/></div>
+            <div class="item"><img src="/images/2012-07-15 04.00.57.jpg" style="height:341px;"/></div>
+            <div class="item"><img src="/images/2012-07-15 04.01.43.2.jpg" style="height:341px;"/></div>
+          </div>
+            <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="container" id="sticky-anchor">
+    <div class="navbar" id="sticky">
 			<div class="navbar-inner topbar">
 				<div class="container">
 					<ul class="nav">
@@ -33,32 +74,9 @@
 				</div>
 			</div>
 		</div>
-		</br></br></br>
-     <!-- <div class="span6"><h1>Kerala Mini Sabarimala</h1></div>  -->
-    </br>
-
-    <div class="row" id="temple">
-        <div class="span3" style="">
-          <img class="well" src="/images/front-ayyappa-logo.jpg" alt="" />
-        </div>
-        <div class="span9">
-          <div id="myCarousel" class="well carousel slide" style="height:341px;">
-              <!-- Carousel items -->
-            <div class="carousel-inner">
-              <div class="active item"><img src="/images/img1.jpg" style="height:341px;"/></div>
-              <div class="item"><img src="/images/img2.jpg" style="height:341px;"/></div>
-              <div class="item"><img src="/images/img4.jpg" style="height:341px;"/></div>
-              <div class="item"><img src="/images/2012-07-15 03.59.28.jpg" style="height:341px;"/></div>
-              <div class="item"><img src="/images/2012-07-15 04.00.57.jpg" style="height:341px;"/></div>
-              <div class="item"><img src="/images/2012-07-15 04.01.43.2.jpg" style="height:341px;"/></div>
-            </div>
-            <!-- Carousel nav -->
-              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-          </div>
-        </div>
-    </div>
-
+	</div>
+			
+	<div class="container">
     <div class="row">
       <div class="span8">
       	<h2>Temple</h2>
@@ -74,6 +92,7 @@
 		      <p>Organizing Mass Maha Homas and Yajnas, for Universal peace and Human integration and Brotherhood, Yoga camps, Vedic classes, classes on Shaktheya (Tantra), Astrology, and other Ancient arts are special activities for the society provided by the temple.</p>
 				</div>
       </div>
+      
       <div class="span4">
         <div id="myCarousel2" class="thumpnail carousel slide" style="height:541px;">
             <!-- Carousel items -->
@@ -88,17 +107,19 @@
             <!-- <div class="item"><img src="/images/2012-07-15 03.51.45.jpg" style="height:541px;"/></div> -->
           </div>
           <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+          <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
         </div>
       </div>
-
     </div>
-    <div class="row" id="services">
+ 	</div> 
+		
+	<div class="container">	
+ 	  <div class="row" id="services">
       <div class="span12">
         <h2>Services</h2>
         <span>The temple renders following regular services:</span>
-        <ul class="form-actions whitebg services">
+        <ol class="form-actions whitebg services">
           <li> Special counseling courses for family devotees on occasional cases upon request.</li>
           <li> Distribution of food and cloths for the needy.</li>
           <li> Distribution of educational books and uniforms.</li>
@@ -113,9 +134,12 @@
           <li> Spacial guidance and support for widows, family hurted and seperated people, orphans, old aged.</li>
           <li> Re-establish of decayed and damaged temples, ashrams, and other spritual centeres.</li>
           <li> Rituals and required vedic homas for individuals and mass. </li>
-        </ul>
+        </ol>
       </div>
     </div>
+   </div>
+   
+   <div class="container">
     <div class="row" id="founder">
       <div class="span12">
         <h2>Founder</h2>
@@ -125,7 +149,7 @@
 
         <span>Swamiji has visited all the four Shankaracharya Amnaya peethas, Puri (Orisa), Srigeri (Karnataka), Dwaraka (Gujarath), Badri (Uttaranjal) for penance and has received blessings from the respective aarcharyas before Sanyasa. His Holiness has done deep worship of anushtanas at the following Holy places.</span>
 
-        <ul class="">
+        <ol class="">
           <li> Sabarimala</li>
           <li> Rameshwaram</li>
           <li> Haridwar</li>
@@ -140,12 +164,12 @@
           <li> Kaanchi</li>
           <li> Mysore</li>
           <li> Palani</li>
-        </ul>
+        </ol>
         </br>
 
         <span>Vedic training and vedantic studies undergone for short periods.</span>
 
-        <ul class="">
+        <ol class="">
           <li> Sandeepani Sadhanalaya, Powai, Mumbai</li>
           <li> Yoga Vedanta Forest Academy, Rishikesh, Himalayas</li>
           <li> Kailash Aashram – Rishikesh, Himalayas</li>
@@ -158,11 +182,11 @@
           <li> Himalayan Institute of Yoga, Lucknow</li>
           <li> Saiva Siddandata Manram Tamil Nadu.</li>
           <li> Nature Cure And Yogic Center, Chennai.</li>
-        </ul>
+        </ol>
         </br>
 
 				<span>At present Swamiji is General Secretary of Kerala State Marga Dharshaka Mandal, Organization for all  Hindu Dharmachaaryas and convener for  Kerala Samsthaana Sanyasi Sabah, registered organization for  saints of Kerala under different samprathayas. He is the founder of</span>
-        <ul class="">
+        <ol class="">
           <li> Ayyappas Mission Trust Mankara,</li>
           <li> Sri Harihara Mission Trust Kollemkode</li>
           <li> M.S.S.R.A.M. Trust Gulbarga Karnataka</li>
@@ -173,7 +197,7 @@
           <li> Kerala Samsthana Sanyasi Sabah</li>
           <li> Ayyappa Seva Ashram, Mankara</li>
           <li> Kerala Mini Sabari Mala, Mankara</li>
-        </ul>
+        </ol>
 
         <p>Different honor-ships and awards came in search of Swamiji, and was rejected by His Holiness but he was Honored and Awarded as Ayyappa Bhakti Pravachana Tilakam in December 1999 at NCH Colony Kanjurmarg, by Mini Sabarimala Mumbai.</p>
 
@@ -183,7 +207,10 @@
       </div>
     </div>
 		</div>
+		
+		<div class="container">
     <div class="row">
+    <div class="span12">
       <div class="form-actions">
        <div class="span4">
         <strong>Contact</strong>
@@ -209,7 +236,7 @@
 		        	+91-944-748-3453 </br> +91-904-884-1334 </br> +91-940-077-3453 </br> +91-854-701-7696<br/>
 		        </p>
           </div>
-        
+        </div>
       </div>
     </div>
   </div>

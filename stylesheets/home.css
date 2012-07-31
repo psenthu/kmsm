@@ -3,22 +3,36 @@ body{
 	font-size:15px;
 }
 
+#sticky {
+  background-color: #fff;
+  color: #000;
+  font-size: 2em;
+  padding: 0.5ex;
+  }
+#sticky.stick {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  }
 
 .topbar{
 	background: #00B1BC;
+
 }
 
-.nav li a{
+.navbar li {
     float: left;
-    width: 80px;
-    padding: 15px 0;
     color:black;
 }
-.nav li a:hover{
-    background: #dddbdb;
+.navbar li a:hover{
+    background: blue;
 }
 .nav li.active a{
-	background: #dddbdb;
+	background-color: blue;
+}
+
+.form-actions{
+	padding: 15px 3px 18px;
 }
 
 .navbar .brand {
@@ -27,7 +41,7 @@ body{
 
 p{
 	font-family:georgia;
-	font-size:13px;
+	font-size:14px;
 	word-spacing:2px;
 }
 
@@ -54,6 +68,9 @@ strong{
 	font-family:georgia;
 	font-style:italic;
 	font-size:18px;
-	
 
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover{
+	background-color: #475692;
 }
