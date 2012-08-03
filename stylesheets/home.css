@@ -74,3 +74,16 @@ strong{
 .navbar .nav .active > a, .navbar .nav .active > a:hover{
 	background-color: #475692;
 }
+
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('/images/scroll-to-top.png') no-repeat;
+}

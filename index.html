@@ -18,8 +18,27 @@
 			$(window).scroll(sticky_relocate);
 			sticky_relocate();
 			});
-		</script>
 
+	</script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
+	</script>
   </head>
   
   
@@ -56,9 +75,8 @@
         </div>
       </div>
     </div>
-  </div>
     
-  <div class="container" id="sticky-anchor">
+  <div class="row" id="sticky-anchor">
     <div class="navbar" id="sticky">
 			<div class="navbar-inner topbar">
 				<div class="container">
@@ -76,70 +94,67 @@
 		</div>
 	</div>
 			
-	<div class="container">
-    <div class="row">
-      <div class="span8">
-      	<h2>Temple</h2>
-				<div class="form-actions whitebg">
-		      <p>Kerala Mini Sabarimala is the only International Research Center blessed by  Panthalam Valiyarajah His Holiness Ramavarma Thamburaan,  and directed by Sabarimala Tantri Brhammasri Kandaruru Rajeeveruru where every devotee is permitted to perform Gee Abhisheka stepping Holy eighteen steps  irrespective of Cast, Creed, Religion and Nationality. This is managed by Ayyappa Seva Ashramam (only aashramam in the world on the name of  Bhagavan Ayyappsa) which is an independent shelter center, formed to study, teach, practice and propagate Sanathana Dharma and Ayyappa Cult for the Integration and Harmony of Humanity and Brotherhood.</p>
+  <div class="row">
+    <div class="span8">
+    	<h2>Temple</h2>
+			<div class="form-actions whitebg">
+	      <p>Kerala Mini Sabarimala is the only International Research Center blessed by  Panthalam Valiyarajah His Holiness Ramavarma Thamburaan,  and directed by Sabarimala Tantri Brhammasri Kandaruru Rajeeveruru where every devotee is permitted to perform Gee Abhisheka stepping Holy eighteen steps  irrespective of Cast, Creed, Religion and Nationality. This is managed by Ayyappa Seva Ashramam (only aashramam in the world on the name of  Bhagavan Ayyappsa) which is an independent shelter center, formed to study, teach, practice and propagate Sanathana Dharma and Ayyappa Cult for the Integration and Harmony of Humanity and Brotherhood.</p>
 
-		      <p>It is located on the Holy banks of Nila River Bharathapuzha the longest river of Kerala, at Mankara village, Palakkad District, Kerala State, twenty kilometers away on Palakkad Ottapalam route on the way to Sri Bhadrakaali Temple Mankara, where the first Historical Ayyappa Kumbamela took place.</p>
+	      <p>It is located on the Holy banks of Nila River Bharathapuzha the longest river of Kerala, at Mankara village, Palakkad District, Kerala State, twenty kilometers away on Palakkad Ottapalam route on the way to Sri Bhadrakaali Temple Mankara, where the first Historical Ayyappa Kumbamela took place.</p>
 
-		      <p>The Ayyappa Vigraha installation of this temple was done by H.H. Swami Nityananda Saraswathy International Yoga Vedanta acharya and chief of DLS Sivananda Ashram, Kerala State, on the day of Pangunni Uttaram (08-04-09). Swami Lakshmanan Nambiar of Mumbai disciple of H.H. Swami Rajeshwarananda Saraswathy (K.R Menon Guruswamy) functions as the Guruswamy of this temple. H.H. Swamy Vedananda Saraswathy chairman, Kerala Samasthana Sanyasi Sabah has done the installation of Divine Mother Rajarajeshwary in the form of Mahameru Sri Chakra on 30-01-09 as Maligapurathu Manja Maathaa Mahalakshmi. Also supported by Bhagavaan Ganesha, Bhagavan Muruga, Navagrahas, Jagad Guru Aadi Shankara Bagavatpadar (re-establisher of Sanathana Dharma), Anjaneya Swami, and Coconut Ganesha. In support there are seventeen (17) Holy Temples arround this  and symbolizing the seventeen Holy Peaks on the way to Sabarimala.</p>
+	      <p>The Ayyappa Vigraha installation of this temple was done by H.H. Swami Nityananda Saraswathy International Yoga Vedanta acharya and chief of DLS Sivananda Ashram, Kerala State, on the day of Pangunni Uttaram (08-04-09). Swami Lakshmanan Nambiar of Mumbai disciple of H.H. Swami Rajeshwarananda Saraswathy (K.R Menon Guruswamy) functions as the Guruswamy of this temple. H.H. Swamy Vedananda Saraswathy chairman, Kerala Samasthana Sanyasi Sabah has done the installation of Divine Mother Rajarajeshwary in the form of Mahameru Sri Chakra on 30-01-09 as Maligapurathu Manja Maathaa Mahalakshmi. Also supported by Bhagavaan Ganesha, Bhagavan Muruga, Navagrahas, Jagad Guru Aadi Shankara Bagavatpadar (re-establisher of Sanathana Dharma), Anjaneya Swami, and Coconut Ganesha. In support there are seventeen (17) Holy Temples arround this  and symbolizing the seventeen Holy Peaks on the way to Sabarimala.</p>
 
-		      <p>Daily poojas, Homas, Vedic recitation, Study of scriptures, Research on Ayappa Cult, Purana paarayana, Daily satsanga, Training of purohits, Training of Brahmacharies and Sanyasis are the daily activities of the temple.</p>
+	      <p>Daily poojas, Homas, Vedic recitation, Study of scriptures, Research on Ayappa Cult, Purana paarayana, Daily satsanga, Training of purohits, Training of Brahmacharies and Sanyasis are the daily activities of the temple.</p>
 
-		      <p>Organizing Mass Maha Homas and Yajnas, for Universal peace and Human integration and Brotherhood, Yoga camps, Vedic classes, classes on Shaktheya (Tantra), Astrology, and other Ancient arts are special activities for the society provided by the temple.</p>
-				</div>
-      </div>
+	      <p>Organizing Mass Maha Homas and Yajnas, for Universal peace and Human integration and Brotherhood, Yoga camps, Vedic classes, classes on Shaktheya (Tantra), Astrology, and other Ancient arts are special activities for the society provided by the temple.</p>
+			</div>
+    </div>
       
-      <div class="span4">
-        <div id="myCarousel2" class="thumpnail carousel slide" style="height:541px;">
-            <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item"><img src="/images/2012-07-18 09.21.37.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/2012-07-18 09.21.01.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/2012-07-18 09.22.05.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/2012-07-18 09.21.01.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/front-ayyappa-logo.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/img3.jpg" style="height:541px;"/></div>
-            <div class="item"><img src="/images/2012-07-18 09.22.05.jpg" style="height:541px;"/></div>
-            <!-- <div class="item"><img src="/images/2012-07-15 03.51.45.jpg" style="height:541px;"/></div> -->
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+    <a href="#" class="scrollup">Scroll UP</a>
+      
+  	<div class="span4">
+      <div id="myCarousel2" class="thumpnail carousel slide" style="height:541px;">
+          <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item"><img src="/images/2012-07-18 09.21.37.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/2012-07-18 09.21.01.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/2012-07-18 09.22.05.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/2012-07-18 09.21.01.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/front-ayyappa-logo.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/img3.jpg" style="height:541px;"/></div>
+          <div class="item"><img src="/images/2012-07-18 09.22.05.jpg" style="height:541px;"/></div>
+          <!-- <div class="item"><img src="/images/2012-07-15 03.51.45.jpg" style="height:541px;"/></div> -->
         </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
       </div>
     </div>
- 	</div> 
+  </div>
 		
-	<div class="container">	
- 	  <div class="row" id="services">
-      <div class="span12">
-        <h2>Services</h2>
-        <span>The temple renders following regular services:</span>
-        <ol class="form-actions whitebg services">
-          <li> Special counseling courses for family devotees on occasional cases upon request.</li>
-          <li> Distribution of food and cloths for the needy.</li>
-          <li> Distribution of educational books and uniforms.</li>
-          <li> Conducts medical camps and blood donations camps.</li>
-          <li> 24 Hours ambulance service.</li>
-          <li> Co-ordination of all like minded organization for the welfare of the society.</li>
-          <li> Pilgrimage trips, educational trips, and management study trips.</li>
-          <li> Medical guidance for BP, Diabetics, Asthma, Fits, and Heart decease.</li>
-          <li> Special Health classes for natural living style.</li>
-          <li> Classes on eastern philosophy, Prasthana Trayas, and Sri Vidya upasana for upgraded seekers.</li>
-          <li> Mass conference and congress on various aspects of Hindu Dharma.</li>
-          <li> Spacial guidance and support for widows, family hurted and seperated people, orphans, old aged.</li>
-          <li> Re-establish of decayed and damaged temples, ashrams, and other spritual centeres.</li>
-          <li> Rituals and required vedic homas for individuals and mass. </li>
-        </ol>
-      </div>
+  <div class="row" id="services">
+    <div class="span12">
+      <h2>Services</h2>
+      <span>The temple renders following regular services:</span>
+      <ol class="form-actions whitebg services">
+        <li> Special counseling courses for family devotees on occasional cases upon request.</li>
+        <li> Distribution of food and cloths for the needy.</li>
+        <li> Distribution of educational books and uniforms.</li>
+        <li> Conducts medical camps and blood donations camps.</li>
+        <li> 24 Hours ambulance service.</li>
+        <li> Co-ordination of all like minded organization for the welfare of the society.</li>
+        <li> Pilgrimage trips, educational trips, and management study trips.</li>
+        <li> Medical guidance for BP, Diabetics, Asthma, Fits, and Heart decease.</li>
+        <li> Special Health classes for natural living style.</li>
+        <li> Classes on eastern philosophy, Prasthana Trayas, and Sri Vidya upasana for upgraded seekers.</li>
+        <li> Mass conference and congress on various aspects of Hindu Dharma.</li>
+        <li> Spacial guidance and support for widows, family hurted and seperated people, orphans, old aged.</li>
+        <li> Re-establish of decayed and damaged temples, ashrams, and other spritual centeres.</li>
+        <li> Rituals and required vedic homas for individuals and mass. </li>
+      </ol>
     </div>
-   </div>
+  </div>
    
-   <div class="container">
     <div class="row" id="founder">
       <div class="span12">
         <h2>Founder</h2>
@@ -172,10 +187,10 @@
         <ol class="">
           <li> Sandeepani Sadhanalaya, Powai, Mumbai</li>
           <li> Yoga Vedanta Forest Academy, Rishikesh, Himalayas</li>
-          <li> Kailash Aashram – Rishikesh, Himalayas</li>
-          <li> Harihar Kailash – Rishikesh, Himalayas</li>
-          <li> Dayananda Ashramam – Puranijadi – Himalayas</li>
-          <li> Arsha Vidhya Guru kulam – Anaaikattil Tamil Nadu.</li>
+          <li> Kailash Aashram - Rishikesh, Himalayas</li>
+          <li> Harihar Kailash - Rishikesh, Himalayas</li>
+          <li> Dayananda Ashramam - Puranijadi – Himalayas</li>
+          <li> Arsha Vidhya Guru kulam - Anaaikattil Tamil Nadu.</li>
           <li> Tantra and Sri Vidya Center Rameshwaram.</li>
           <li> Baudha Vihara Meditation Center, Orrisa</li>
           <li> Sahaja Yoga Retreat center , Mysore</li>
@@ -206,7 +221,8 @@
         <p>His Holiness  has simple harmonious loving friendly approachable outlook and is expert in comparing the ancient traditional vedic human life values with the existing scientific life of families, and easily adopts latest simple techniques for busy working aspirants with essentials values so that they are able to follow Sanathana Dharma  with their customs and systems easily in daily practical life without escaping from life.</p>
       </div>
     </div>
-		</div>
+	</div>
+		
 		
 		<div class="container">
     <div class="row">
