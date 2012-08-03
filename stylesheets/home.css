@@ -1,6 +1,8 @@
 
 body{
 	font-size:15px;
+	font-family:Arial Verdana;
+	
 }
 
 #sticky {
@@ -40,9 +42,9 @@ body{
 }
 
 p{
-	font-family:georgia;
-	font-size:14px;
+	font-size:15px;
 	word-spacing:2px;
+	font-family:Arial Verdana;
 }
 
 .whitebg{
@@ -51,25 +53,27 @@ p{
 
 ul{
 	font-size: 14px;
-	font-family:georgia;
-	
 }
 
+
 span{
-	font-family:arial;
 	font-weight:bold;
+	font-size:16px;
 }
 
 h2{
-	font-family:georgia;
 }
 
 strong{
-	font-family:georgia;
 	font-style:italic;
 	font-size:18px;
 
 }
+
+.navbar .nav > li > a{
+	color:black;
+}
+
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover{
 	background-color: #475692;
@@ -86,4 +90,15 @@ strong{
     display:none;
     text-indent:-9999px;
     background: url('/images/scroll-to-top.png') no-repeat;
+}
+
+::-webkit-scrollbar {
+	width: 5px; 
+	height: 4px; 
+	background-color:white;
+}
+
+::-webkit-scrollbar-thumb { 
+	background-color:black; 
+	-webkit-border-radius: 20px; 
 }
