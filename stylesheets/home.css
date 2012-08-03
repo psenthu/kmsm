@@ -92,13 +92,23 @@ strong{
     background: url('/images/scroll-to-top.png') no-repeat;
 }
 
-::-webkit-scrollbar {
-	width: 5px; 
-	height: 4px; 
-	background-color:white;
+
+::-webkit-scrollbar {  
+    width:8px;
+    height:8px;
+    -webkit-border-radius: 4px;
+    background-color:white;
 }
 
-::-webkit-scrollbar-thumb { 
-	background-color:black; 
-	-webkit-border-radius: 20px; 
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background-color:transparent;
 }
+
+::-webkit-scrollbar-thumb {  
+    background-color: rgba(053, 057, 071, 0.3);
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius:4px;
+}
+
