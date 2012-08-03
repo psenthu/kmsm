@@ -109,6 +109,7 @@ strong{
     background-color: rgba(053, 057, 071, 0.3);
     width: 6px;
     height: 6px;
-    -webkit-border-radius:4px;
+    -webkit-border-radius:8px;
+    opacity:50%;
 }
 
