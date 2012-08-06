@@ -1,26 +1,6 @@
 <html>
   <head>
-  <script src="http://www.google.com/jsapi"></script>
-	<script type="text/javascript">
 	
-	google.load("jquery", "1");
-
-	function sticky_relocate() {
-		var window_top = $(window).scrollTop();
-		var div_top = $('#sticky-anchor').offset().top;
-		if (window_top > div_top)
-		  $('#sticky').addClass('stick')
-		else
-		  $('#sticky').removeClass('stick');
-		}
-
-		google.setOnLoadCallback(function() {
-			$(window).scroll(sticky_relocate);
-			sticky_relocate();
-			});
-
-	</script>
-
   </head>
   
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8" />
@@ -33,7 +13,6 @@
 	<body data-spy="scroll" data-target=".subnav" data-offset="50" >
 	</br>
 	</br>
-		
 		
 	<div class="container">
 	
@@ -60,8 +39,8 @@
     </div>
     
   <!-- sticky navbar -->  
-  <div class="row" id="sticky-anchor">
-    <div class="navbar" id="sticky">
+  <div id="header">
+    <div class="navbar" id="">
 			<div class="navbar-inner topbar">
 				<div class="container">
 					<ul class="nav">
@@ -78,7 +57,7 @@
 			</div>
 		</div>
 	</div>
-		
+	
   <div class="row">
     <div class="span8">
     	<h2>Temple</h2>
@@ -246,5 +225,20 @@
     </div>
   </div> <!-- Container end -->
   
+  
   </body>
+  
+  	<script type="text/javascript">
+		$(document).ready(function(){
+		  var HeaderTop = $('#header').offset().top;
+		  $(window).scroll(function(){
+	      if( $(window).scrollTop() > HeaderTop ) {
+	          $('#header').css({position: 'fixed', top: '0px'});
+	      } 
+	      else {
+	          $('#header').css({position: 'static'});
+	      }
+		  });
+		});
+	</script>
 </html>

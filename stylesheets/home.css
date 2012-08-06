@@ -1,24 +1,15 @@
 
 body{
-	font-size:16px;
 	
 }
 
-#sticky {
-  background-color: #fff;
-  color: #000;
-  font-size: 2em;
-  padding: 0.5ex;
-  }
-#sticky.stick {
-  position: fixed;
-  top: 0;
-  z-index: 10000;
-  }
 
 .topbar{
 	background: #00B1BC;
 
+}
+.navbar{
+	width:100%;
 }
 
 .navbar li {
@@ -115,3 +106,7 @@ section{
 	padding-top:50px;
 }
 
+li{
+	font-size: 17px;
+}
+ 
