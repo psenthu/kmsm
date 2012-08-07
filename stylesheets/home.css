@@ -6,11 +6,13 @@ body{
 
 .topbar{
 	background: #00B1BC;
+	border
 
 }
 .navbar{
 	width:100%;
 }
+
 
 .navbar li {
     float: left;
@@ -112,3 +114,40 @@ li{
 	font-size: 17px;
 }
  
+ #back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: -150px;
+}
+
+#back-top a {
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background:url(/images/scroll-to-top.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+}
