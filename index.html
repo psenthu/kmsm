@@ -10,7 +10,7 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
   
-	<body data-spy="scroll" data-target=".subnav" data-offset="50" >
+	<body data-spy="scroll" data-target="#header" data-offset="50" >
 	</br>
 	</br>
 		
@@ -40,25 +40,25 @@
     
   <!-- sticky navbar -->  
   <div id="header">
-    <div class="navbar" id="">
+    <div class="navbar" id="navbar">
 			<div class="navbar-inner topbar">
 				<div class="container">
-					<ul class="nav">
-					  <a class="brand name-brand" href="#">
+					<a class="brand" href="#">
 							Kerala Mini Sabarimala
-						</a>
+					</a>
+					<ul class="nav">
  					  <!-- <li class="divider-vertical"></li> -->  
-						<li><a href="#temple">Temple</a></li>
+						<li class="active"><a href="#temple">Temple</a></li>
 					  <li><a href="#services">Sevicess</a></li>
 					  <li><a href="#founder">Founder</a></li>
-					  <li><a href="#contact-us">Contact us</a></li>
+					  <li><a href="#contact">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-  <div class="row">
+  <div class="row section" id="temple">
     <div class="span8">
     	<h2>Temple</h2>
 			<div class="form-actions whitebg">
@@ -97,8 +97,7 @@
     </div>
   </div>
 		
-  <div class="row" id="">
-    <section id="services">
+  <div class="row section" id="services">
     <div class="span12">
       <h2>Services</h2>
       <span>The temple renders following regular services:</span>
@@ -119,11 +118,9 @@
         <li> Rituals and required vedic homas for individuals and mass. </li>
       </ol>
     </div>
-		</section>
   </div>
    
-    <div class="row" id="">
-    	<section id="founder">
+    <div class="row section" id="founder">
 		    <div class="span12">
 		      <h2>Founder</h2>
 
@@ -190,13 +187,12 @@
 		    
 		    </div>
 		  </div>
-    </section>
 	</div>
 		
 	<!------------ Footer ------------->	
-  <div class="row">
+  <div class="row section" id="contact">
     <div class="span11">
-      <div class="form-actions" id="contact-us">
+      <div class="form-actions">
         <div class="span4">
 		      <strong>Contact</strong>
 		      <p class="form-actions">
@@ -230,15 +226,17 @@
   
   	<script type="text/javascript">
 		$(document).ready(function(){
-		  var HeaderTop = $('#header').offset().top;
+		  var HeaderTop = $('#navbar').offset().top;
 		  $(window).scroll(function(){
 	      if( $(window).scrollTop() > HeaderTop ) {
-	          $('#header').css({position: 'fixed', top: '0px'});
+	          $('#navbar').addClass('navbar-fixed-top');
 	      } 
 	      else {
-	          $('#header').css({position: 'static'});
+	          $('#navbar').removeClass('navbar-fixed-top');
 	      }
 		  });
+		  
+		  $('#navbar').scrollspy()
 		});
 	</script>
 </html>
