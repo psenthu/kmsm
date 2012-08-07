@@ -10,6 +10,7 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
   
+  
 	<body data-spy="scroll" data-target="#header" data-offset="50" >
 	</br>
 	</br>
@@ -47,11 +48,10 @@
 							Kerala Mini Sabarimala
 					</a>
 					<ul class="nav">
- 					  <!-- <li class="divider-vertical"></li> -->  
 						<li class="active"><a href="#temple">Temple</a></li>
-					  <li><a href="#services">Sevicess</a></li>
-					  <li><a href="#founder">Founder</a></li>
-					  <li><a href="#contact">Contact us</a></li>
+					  <li class=""><a href="#services">Sevicess</a></li>
+					  <li class=""><a href="#founder">Founder</a></li>
+					  <li class=""><a href="#contact">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -191,7 +191,7 @@
 		
 	<!------------ Footer ------------->	
   <div class="row section" id="contact">
-    <div class="span11">
+    <div class="span12">
       <div class="form-actions">
         <div class="span4">
 		      <strong>Contact</strong>
@@ -205,14 +205,14 @@
         </div>
           
         <div class="phone span3">
-         <strong>Phone </strong> </br>
+         <strong>Phone </strong> 
 				 <p class="form-actions">
          	+91-491-287-3453 </br> +91-491-210-7696
       	 </p>
         </div>
           
-        <div class="Mobile span3"> 
-	        <strong> Mobile </strong> </br>
+        <div class="mobile span3"> 
+	        <strong> Mobile </strong> 
 	        <p class="form-actions">
 	        	+91-944-748-3453 </br> +91-904-884-1334 </br> +91-940-077-3453 </br> +91-854-701-7696<br/>
 	        </p>
@@ -222,9 +222,7 @@
   </div> <!-- Container end -->
   
   
-  </body>
-  
-  	<script type="text/javascript">
+  <script type="text/javascript">
 		$(document).ready(function(){
 		  var HeaderTop = $('#navbar').offset().top;
 		  $(window).scroll(function(){
@@ -236,7 +234,9 @@
 	      }
 		  });
 		  
-		  $('#navbar').scrollspy()
+		  //$('#navbar').scrollspy()
 		});
 	</script>
+  </body>
+  
 </html>
