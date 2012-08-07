@@ -117,6 +117,7 @@ li{
  #back-top {
 	position: fixed;
 	bottom: 30px;
+	margin-left: -150px;
 }
 
 #back-top a {
