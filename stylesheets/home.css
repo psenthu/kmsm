@@ -2,7 +2,9 @@
 body{
 	margin-top:30px;
 }
-
+.carousel .item img{
+	width:100%;
+}
 
 .topbar{
 	background: #00B1BC;
