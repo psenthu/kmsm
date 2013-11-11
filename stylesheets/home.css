@@ -9,12 +9,18 @@ body{
 .topbar{
 	background: #00B1BC;
 	border
+}
 
+.well{
+	border-radius: 0;
+	border:0;
+}
+.carousel-control{
+	top:50%;
 }
 .navbar{
 	width:100%;
 }
-
 
 .navbar li {
     float: left;
